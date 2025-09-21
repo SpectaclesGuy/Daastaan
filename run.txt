@@ -1,0 +1,5 @@
+uvicorn app:app --reload --port 8000
+curl -X POST "http://localhost:8000/generate_ad" \
+  -F "prompt=Premium cosmetic bottle, reflective glass table, studio lighting" \
+  -F "caption=Experience luxury that shines with every drop." \
+  -F "file=@/path/to/your/product.jpg"
